@@ -1,0 +1,190 @@
+body{
+    height: 5000px;
+}
+/*商品列表*/
+.box li{
+    float: left;
+    width: 234px;
+    height: 326px;
+    background: #fff;
+    margin-top: 10px;
+    margin-right: 4px;
+    border: 1px solid deeppink;
+}
+.box li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box li:hover{
+    border: 1px solid #000;
+}
+.box li .img{
+    position: relative;
+    width: 185px;
+    height: 185px;
+    margin: 30px;
+}
+.box li .img i{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.3);
+}
+.box li a:hover .img i{
+    display: block;
+}
+.box li .img img{
+    width: 100%;
+    height: 100%;
+}
+.box li p{
+    margin-top: 5px;
+    text-align: center;
+}
+.box li span{
+    display: block;
+    margin-top: 8px;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+/*这个是侧边导航栏*/
+.rg_nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 938px;
+    background: #000;
+    color: #fff;
+    z-index: 100;
+}
+
+.rg_nav .shop_car{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-top: 300px;
+}
+.rg_nav .shop_car a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.rg_nav .shop_car a i{
+    display: block;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+}
+.rg_nav .top span,.rg_nav .shop_car span{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100px;
+    height: 30px;
+    background: #000;
+    text-align: center;
+    line-height: 30px;
+}
+.rg_nav .shop_car span{
+    margin-top: -11px;
+}
+
+/*购物车 hover*/
+.rg_nav .shop_car .show_hover{
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 320px;
+    height: auto;
+    min-height: 50px;
+    background: deeppink;
+    z-index: 100;
+}
+.rg_nav .shop_car .show_hover .material {
+    width: 100%;
+    font-size: 14px;
+}
+.rg_nav .shop_car .show_hover h4{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    text-indent: 20px;
+}
+.rg_nav .shop_car .show_hover .material li{
+    width: 100%;
+    height: 51px;
+}
+.rg_nav .shop_car .show_hover .material li .shop_img{
+    width: 35px;
+    height: 35px;
+    margin: 8px 10px;
+}
+.rg_nav .shop_car .show_hover .material li .shop_img a img{
+    width: 100%;
+}
+.rg_nav .shop_car .show_hover .material li .shop_cent{
+    width: 150px;
+    height: 25px;
+    margin-top: 8px;
+    line-height: 13px;
+}
+.rg_nav .shop_car .show_hover .material li .shop_cent a{
+    height: auto;
+}
+.rg_nav .shop_car .show_hover .material li .shop_cent p{
+    width: 100%;
+    height: 13px;
+    margin-top: 5px;
+    line-height: 13px;
+    text-align: left;
+}
+.rg_nav .shop_car .show_hover .material li .shop_del{
+    width: 60px;
+    margin: 8px 7px 10px;
+    text-align: right;
+    cursor: pointer;
+}
+.rg_nav .shop_car:hover span,.rg_nav .top:hover span{
+    display: block;
+    animation : move 0.3s linear 0s normal forwards;
+}
+/*返回顶部*/
+.rg_nav .top{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-top: 440px;
+}
+.rg_nav .top a{
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+.rg_nav .top a i{
+    display: block;
+    color: red;
+    font-size: 15px;
+    text-align: center;
+    line-height: 50px;
+}
+.rg_nav .top span{
+    margin-top: -8px;
+}
+@keyframes  move{
+    form {
+        right: 0;
+    }
+    to {
+        right: 30px;
+    }
+}
