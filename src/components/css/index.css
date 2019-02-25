@@ -1,5 +1,5 @@
 body{
-    height: 5000px;
+    height: 3300px;
 }
 /*商品列表*/
 .box li{
@@ -48,7 +48,7 @@ body{
 }
 .box li span{
     display: block;
-    margin-top: 8px;
+    margin-top: 4px;
     color: red;
     font-size: 20px;
     text-align: center;

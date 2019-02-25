@@ -1,6 +1,6 @@
 <template>
     <ul class="box fix">
-        <li v-for="(item,index) in msg" >
+        <li v-for="(item,index) in msg" :key='index'>
             <a :href="'/details/'+item._id">
                 <div class='img'>
                     <i></i>

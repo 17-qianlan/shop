@@ -24,7 +24,7 @@
             <section class="below"><!--下-->
                 <span class="after_sale dis_ib">售后服务</span>
                 <span class="maintain dis_ib">全国联保</span>
-                <span class="total dis_ib" v-text="">￥666</span>
+                <span class="total dis_ib">￥666</span>
             </section>
         </li>
     </ul>
